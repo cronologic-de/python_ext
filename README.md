@@ -1,14 +1,25 @@
 # python_ext
 
 ## Build the package
+
+### Overview
+- [`setup.py`](./timetagger4ext/tools/setup.py) is used by python to create `setuptools` pakcage.
+
+### Creat the Package
+**Prerequisites**
+
 1. Just make sure that the following packages are installed
 ```
 <path-to-python-installation-folder>/pip install numpy setuptools wheel
 ```
-2. cd to `python_ext\timetagger4ext\tools` and run:
+
+**Steps**
+
+cd to `python_ext\timetagger4ext\tools` and run:
 ```
 python setup.py bdist_wheel sdist
 ```
+
 It will build both the package binaries and source distribution.
 Output:
 - In directory: <path-to-python_ext>\timetagger4ext\tools\dist
