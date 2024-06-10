@@ -2,8 +2,26 @@
 
 ## Overview
 - [`setup.py`](./timetagger4ext/tools/setup.py) is used by python to create `setuptools` pakcage.
+- Extension project can be opened from Visual Studio using file [`timetagger4ext.vcxproj`](./timetagger4ext/tools/timetagger4ext.vcxproj).
+
+### Directory Structure
+Current structure
+```
+└───timetagger4ext
+    ├───include
+    ├───lib  # External libraries (driver)
+    ├───src
+    │   └───crono_exts  # The package source code
+    └───tools  # Has project files, package setup files
+```
 
 ## Build the package
+**Overview**
+
+- Build the `setuptool` package dist files.
+- It builds the project first.
+- Source code is packaged also using `sdist`.
+  
 **Prerequisites**
 
 1. Just make sure that the following packages are installed
@@ -42,5 +60,4 @@ Successfully installed crono-exts-0.1
   twine check dist/*
   twine upload dist/* -r testpypi
   ```
-- Setup MSVC Projects for its users.
 - Support Linux.
