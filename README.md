@@ -42,3 +42,5 @@ Successfully installed crono-exts-0.1
   twine check dist/*
   twine upload dist/* -r testpypi
   ```
+- Setup MSVC Projects for its users.
+- Support Linux.
