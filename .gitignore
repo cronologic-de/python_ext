@@ -3,3 +3,6 @@ timetagger4ext/tools/src/crono_exts.egg-info
 timetagger4ext/tools/build
 timetagger4ext/tools/dist
 timetagger4ext/tools/src
+timetagger4ext/tools/.vs
+timetagger4ext/tools/timetagger4ext
+timetagger4ext/tools/x64
