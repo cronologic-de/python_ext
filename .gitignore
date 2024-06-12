@@ -4,5 +4,9 @@ timetagger4ext/tools/build
 timetagger4ext/tools/dist
 timetagger4ext/tools/src
 timetagger4ext/tools/.vs
-timetagger4ext/tools/timetagger4ext
 timetagger4ext/tools/x64
+timetagger4ext/tools/timetagger4ext
+TimeTagger4ReadOut/tools/.vs
+TimeTagger4ReadOut/tools/env
+TimeTagger4ReadOut/tools/env1
+TimeTagger4ReadOut/tools/x64
