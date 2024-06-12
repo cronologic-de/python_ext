@@ -6,9 +6,22 @@
 | Module | `crono_exts.timetagger4vector` |
 | Python Installation folder in `vcxproj` | `C:\Dev\Python311` |
 | Python folder on the Windows Path | `C:\Dev\Python311` |
+- Extension project can be opened from Visual Studio using file [`timetagger4ext.vcxproj`](./timetagger4ext/tools/timetagger4ext.vcxproj).
+
+### Directory Structure
+Current structure
+```
+└───timetagger4ext
+    ├───include
+    ├───lib  # External libraries (driver)
+    ├───src
+    │   └───crono_exts  # The package source code
+    └───tools  # Has project files, package setup files
+```
 
 ## Build the package from Command Line
-### Prerequisites
+### Prerequisites**
+
 1. Just make sure that the following packages are installed
 ```
 <path-to-python-installation-folder>/pip install numpy setuptools wheel
@@ -26,13 +39,30 @@ python setup.py bdist_wheel sdist
 
 It will build both the package binaries and source distribution.
 Output:
-- In directory: <path-to-python_ext>\timetagger4ext\tools\dist
+- In directory: `python_ext\timetagger4ext\tools\dist`
 - Wheel package: `crono_exts-0.1-cp311-cp311-win_amd64.whl`.
 - Source: `crono_exts-0.1.tar.gz`
 
+## Install the package 
+cd to `python_ext\timetagger4ext\tools\dist`, run:
+```
+pip install crono_exts-0.1-cp311-cp311-win_amd64.whl
+```
+You should find:
+```
+Successfully installed crono-exts-0.1
+```
 ## Next steps:
 - Install the package and make sure that the driver dll is installed on the system folder.
+- Ensure that the extension APIs are exported, and use them in a sample python app.
 - Ensure all source is added to the source package.
+- Fill `clasifiers` in `setup.py`.
+- Try the package on `test.pypi`, could be using `twine`
+  ```
+  twine check dist/*
+  twine upload dist/* -r testpypi
+  ```
+- Support Linux.
 
 
 # `ReadOut` App
