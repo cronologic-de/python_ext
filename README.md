@@ -1,5 +1,7 @@
 # python_ext
 
+⚠️ Warning: This is just a prototype/experimental ⚠️
+
 ## Overview
 - [`setup.py`](./timetagger4ext/tools/setup.py) is used by python to create `setuptools` pakcage.
 - As per `setup.py` and project settings:
