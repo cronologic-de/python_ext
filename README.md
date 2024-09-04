@@ -73,7 +73,13 @@ Successfully installed crono-exts-0.1
 - Sample application that uses the extension.
 - Uses `crono_exts.timetagger4vector` extension.
 
-## Create MSVS Project
+## Run from the command line.
+cd TimeTagger4ReadOut\src
+python TimeTagger4ReadOut\src
+
+
+
+## Create MSVS Project (other IDEs are probably better)
 
 ### Prerequisites
 - Check prerequisites of the extension.
